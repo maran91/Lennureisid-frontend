@@ -23,14 +23,14 @@ This is the frontend application for a flight booking system built with **React*
 
 ### 1. Clone the repo
 
-```bash
-cd flight-booking-frontend
-```
-2. Install dependencies
+
+2. Open folder flight-booking-frontend
+
+3. Install dependencies
 ```bash
 npm install
 ```
-3. Run the app
+4. Run the app
 ```bash
 npm run dev
 ```
