@@ -17,9 +17,7 @@ This is the frontend application for a flight booking system built with **React*
 - 🧠 **Custom Hooks** — `useFetch` for data loading
 
 ---
-Entry point
 
----
 
 ## 🚀 Getting Started
 
