@@ -19,10 +19,6 @@ This is the frontend application for a flight booking system built with **React*
 ---
 Entry point
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚀 Getting Started
