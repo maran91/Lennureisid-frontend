@@ -6,6 +6,7 @@ import { Column } from 'primereact/column';
 import { Message } from 'primereact/message';
 
 const FlightList = () => {
+  
   const [searchParams] = useSearchParams();
   const queryString = searchParams.toString();
   const navigate = useNavigate();
