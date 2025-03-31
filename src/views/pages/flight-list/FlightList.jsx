@@ -1,6 +1,6 @@
-import useFetch from '../hooks/useFetch.js';
-import { FlightFilter } from './FlightFilter.jsx';
-import { useSearchParams } from 'react-router-dom';
+import useFetch from '../../../hooks/useFetch.js';
+import { FlightFilter } from './flight-filter/FlightFilter.jsx';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Message } from 'primereact/message';
@@ -8,8 +8,9 @@ import { Message } from 'primereact/message';
 const FlightList = () => {
   const [searchParams] = useSearchParams();
   const queryString = searchParams.toString();
+  const navigate = useNavigate();
 
-  const url = `/flight?${queryString}`;
+  const url = `/api/flight?${queryString}`;
 
   const { data: flights, loading, error } = useFetch(url);
 
@@ -27,6 +28,8 @@ const FlightList = () => {
         rows={10}
         rowsPerPageOptions={[5, 10, 25, 50]}
         tableStyle={{ minWidth: '50rem' }}
+        onRowClick={(e) => navigate(`/flight-seats/${e.data.id}`)}
+        rowClassName={() => 'cursor-pointer'}
       >
         <Column field="departure" header="Departs" sortable style={{ width: '16%' }}></Column>
         <Column field="arrival" header="Destination" sortable style={{ width: '16%' }}></Column>
