@@ -1,4 +1,4 @@
-# ✈️ Flight Booking Frontend
+# ✈️ Lennureisid-frontend 
 
 This is the frontend application for a flight booking system built with **React**, **Vite**, and **PrimeReact**. It allows users to:
 
@@ -24,7 +24,7 @@ This is the frontend application for a flight booking system built with **React*
 ### 1. Clone the repo
 
 
-2. Open folder flight-booking-frontend
+2. Open folder Lennureisid-frontend-main
 
 3. Install dependencies
 ```bash
@@ -38,13 +38,4 @@ npm run dev
 🔗 API Setup
 This frontend expects a backend running on http://localhost:8080.
 
-Make sure your vite.config.js includes API proxy setup:
 
-```bash
-server: {
-  proxy: {
-    '/flight': 'http://localhost:8080',
-    '/flight-seats': 'http://localhost:8080'
-  }
-}
-```
